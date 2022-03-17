@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --success-color: rgb(46, 171, 51);
+    --danger-color: rgb(135, 0, 0);
+    --warning-color: goldenrod;
+    --info-color: rgb(37, 147, 254);
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    width: 100vw;
+    height: 100vh;
+    font-style: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+.notif-type{
+    width: 50%;
+    height: 10%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notif-type button{
+border-radius: 10px;
+height: 40%;
+width: 20%;
+margin: 0 2px;
+color: white;
+}
+.success{
+background-color:var(--success-color);
+border-color: var(--success-color);
+}
+.danger{
+background-color: var(--danger-color);
+border-color: var(--danger-color);
+}
+.warning{
+background-color: var(--warning-color);
+border-color: var(--warning-color);
+}
+.info{
+background-color: var(--info-color);
+border-color: var(--info-color);
+}
+.notif-message{
+    position: absolute;
+    bottom: 1%;
+    right: 4%;
+    height: fit-content;
+    width: 15%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.notif-message div{
+    height: 5vh;
+    width: 100%;
+}
+.p-success{
+    background-color: var(--success-color);
+    
+    color: white;
+}
+.p-danger{
+    background-color: var(--danger-color);
+    color: white;
+}
+.p-warning{
+    background-color: var(--warning-color);
+    color: white;
+}
+.p-info{
+    background-color: var(--info-color);
+    color: white;
+}
