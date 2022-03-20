@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: aqua;
+    width: 100vh;
+    height: 100Vh;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 80vw;
+    height: 70vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title{
+    position: absolute;
+    top: 3%;
+    width: 80%;
+    left: 10%;
+    font-size: 3.5em;
+}
+.numbers{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 4em;
+}
+.box{
+    width: 20%;
+    height: 50%;
+    text-align: center;
+}

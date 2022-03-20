@@ -1,6 +1,5 @@
 const image_gf=document.getElementById('image_gf');
 const btns=document.querySelectorAll('button');
-const image_container= document.querySelector('.image-container');
 var images= ['img/img1.jpg','img/img2.jpg','img/img3.jpg','img/img4.jpg','img/img5.jpeg','img/img6.jpg'];
 var i=0;
 
@@ -16,7 +15,6 @@ function makeCarrousel() {
     }
     setTimeout('makeCarrousel()',5000);
 }
-
 
 window.onload=makeCarrousel();
 image.addEventListener('mouseover',()=>{
