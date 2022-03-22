@@ -31,7 +31,7 @@ buttons.forEach(button => {
 
 
 
-function newP(message="message",classP='classP') {
+function newP(message,classP) {
     const notif_msg_contain=document.createElement('div');
     const message_contain=document.createElement('div');
     message_contain.className=classP;
