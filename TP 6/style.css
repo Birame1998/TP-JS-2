@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* rgb(243, 225, 255) favourite */
+/* rgb(238, 238, 238) search input */
+/* rgb(196, 188, 188) heart */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 99vw;
+    position: relative;
+    border-top: 5px solid rgb(237, 235, 234);
+    border-left: 10px solid rgb(237, 235, 234);
+    border-right: 10px solid rgb(237, 235, 234);
+    border-bottom: 10px solid rgb(237, 235, 234);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.search{
+    padding: 20px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    height: 5vh;
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    font-size: 1.2rem;
+}
+.search i{
+    font-size: 2.2rem;
+    margin-left: 20px;
+    color: rgb(138, 128, 141);
+
+}
+
+
+
+main{
+    flex: 9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.favourite-recipes{
+    flex: 4;
+    background-color: rgb(243, 225, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ .contain-favourite-recipes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.favourite-recipes img{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+align-self: center;
+display: flex;
+flex-wrap: wrap;
+}
+.contain-favourite-recipes h3{
+    align-self: center;
+}
+
+
+
+
+.generate-recipes{
+flex: 6;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.contain-generate-recipes{
+    position: relative;
+    height: 90%;
+    width: 50%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+}
+.contain-recipe button{
+    position: absolute;
+    top: 7%;
+    width: 30%;
+    height: 8%;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    left: 0;
+}
+.generate-recipes img{
+    width: 100%;
+    align-self: center;
+    height: 400px;
+}
+.recipe-infos{
+    margin: 0 15px;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.recipe-infos h2{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+.recipe-infos i{
+    position: absolute;
+    bottom: 2%;
+    font-size: 1.5rem;
+    color: rgb(196, 188, 188);
+}
+button{
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+.modal{
+    display: none;
+}
+.recipe-modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(131, 130, 130);
+    overflow-y: scroll;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.recipe-modal h1{
+    align-self: center;
+}
+.recipe-modal img{
+    align-self: center;
+    width: 80%;
+    height: 70%;
+    margin-top: 1%;
+}
+.recipe-modal span{
+    align-self: center;
+    width: 80%;
+    letter-spacing: .2px;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.recipe-modal h2{
+    width: 80%;
+    align-self: center;
+    margin-top: 1%;
+}
+.recipe-modal ul{
+    margin-top: 1%;
+    font-size: 1.2rem;
+    width: 80%;
+    font-weight: 500;
+    align-self: center;
+}
+.recipe-modal i{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 1.4rem;
+}
+
+.visible{
+    display: block; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+
+
